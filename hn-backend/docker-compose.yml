@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-  # hn-feed:
-  #   hostname: localhost
-  #   container_name: hn-feed
-  #   build: ../hn-feed-front
-  #   ports:
-  #     - 4200:4200
+  hn-feed:
+    hostname: localhost
+    container_name: hn-feed
+    build: ../hn-feed-front
+    ports:
+      - 4200:4200
       
   nodejs:
     build:
