@@ -1,0 +1,77 @@
+
+.titulo1{
+height:80px;
+font-size:40px;
+color: white
+ 
+}
+ 
+.titulo2{
+height:40px;
+color: white
+}
+
+.toolbar{
+padding:50px 0 50px 20px;
+background-color: darkslategrey;
+}
+
+.viewport{
+    height: 500px;
+    margin: 0 30px 0 30px;
+}
+
+.mat-expansion-panel-header {
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+
+    .mat-panel-title, .time {
+      color: #333;
+    }
+    
+    .mat-content {
+      align-items: center;
+    }
+
+    .mat-expansion-panel-header-title {
+      flex-grow: 3 !important
+    }
+
+    .mat-expansion-panel-header-description {
+      flex-basis: 0;
+    } 
+    .mat-expansion-panel-header-description {
+      flex-grow: 1 !important;
+      place-items: flex-center;
+      align-items: flex-end;
+      justify-items: flex-end;
+    } 
+    .mat-icon {
+      padding-left:50px;
+      z-index:999999;
+    } 
+
+     .author {
+      color: #999;
+      margin-left: 5px;
+    } 
+
+    .mat-expansion-panel-header:hover {
+      background-color: #fafafa !important;
+    } 
+
+.gen-vieport .mat-expansion-panel-header-title,
+.gen-vieport .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.gen-vieport .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-form-field {
+  margin-right: 12px;
+}

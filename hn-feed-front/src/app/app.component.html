@@ -1,0 +1,42 @@
+<div class="gen-vieport">
+  <mat-toolbar class="toolbar">
+    <mat-toolbar-row class="titulo1">
+      <span>HN Feed</span>
+
+    </mat-toolbar-row>
+    <mat-toolbar-row class="titulo2">
+      <span>We &lt;3 hacker news!</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <cdk-virtual-scroll-viewport itemSize="10" class="viewport">
+    <mat-accordion>
+      <ng-container *cdkVirtualFor="let news of allNews">
+        <mat-expansion-panel #matExpansionPanel *ngIf="!(!news.story_title && !news.title) && !news.deleted" (click)="expand(matExpansionPanel, news)">
+          <mat-expansion-panel-header (mouseover)="onMouseOver(news)" (mouseleave)="onMouseLeave(news)">
+            <mat-panel-title>
+              {{news.story_title ? news.story_title : news.title}}
+              <span class="author"> - {{news.author}} -</span>
+            </mat-panel-title>
+            <mat-panel-description class="time">
+              {{news.formated_time}}
+              <mat-icon aria-hidden="false" aria-label="Delete" *ngIf="news.del_option"(click)="deleteNews($event, news)">delete</mat-icon>
+            </mat-panel-description>
+
+          </mat-expansion-panel-header>
+
+          <mat-form-field>
+            <mat-label>First name</mat-label>
+            <input matInput>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Age</mat-label>
+            <input matInput type="number" min="1">
+          </mat-form-field>
+        </mat-expansion-panel>
+      </ng-container>
+    </mat-accordion>
+  </cdk-virtual-scroll-viewport>
+
+
+</div>

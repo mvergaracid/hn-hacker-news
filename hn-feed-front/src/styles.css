@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+
+
+  .mat-toolbar-single-row {
+    margin-top:100px;
+    height: 250px !important;
+    margin-left:10px !important;
+    margin-right: 10px !important;
+}
+
+  .mat-expansion-panel-header {
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+
+    .mat-panel-title, .time {
+      color: #333;
+    }
+    
+    .mat-content {
+      align-items: center;
+    }
+
+    .mat-expansion-panel-header-title {
+      flex-grow: 3 !important
+    }
+
+    .mat-expansion-panel-header-description {
+      flex-basis: 0;
+    } */
+    /* .mat-expansion-panel-header-description {
+      flex-grow: 1 !important;
+      place-items: flex-center;
+      align-items: flex-end;
+      justify-items: flex-end;
+    } */
+    /* .mat-expansion-panel-header-description {
+      padding-left: 100px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mat-icon {
+      padding-left:50px
+    } */
+
+    /* .author {
+      color: #999;
+      margin-left: 5px;
+    } */
+
+    /* .mat-expansion-indicator{
+      display:none !important;
+    }
+
+    .mat-expansion-panel-header:hover {
+      background-color: #fafafa !important;
+    } */
+
+    .mat-expansion-indicator{
+      display:none !important;
+    }
