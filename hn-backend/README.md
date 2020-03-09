@@ -25,7 +25,14 @@ NEWS_URL=https://hn.algolia.com/api/v1/search_by_date?query=nodejs
 
 $ > docker-compose up
 
-4. Go to http://localhost:5200
+4. Go to http://localhost:3000
+
+If you need run front on another port, please update:
+-.env: 
+    NODE_PORT=<INTERNAL_PORT>
+- docker-compose.yml:
+     ports:
+      - '<ESPOSED_PORT>:<INTERNAL_PORT>'    
 
 5. To run test
 
