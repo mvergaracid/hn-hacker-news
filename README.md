@@ -23,7 +23,7 @@ NEWS_URL=https://hn.algolia.com/api/v1/search_by_date?query=nodejs
 
 3. Execute with docker-compose
 
-$ > docker-compose up
+docker-compose up
 
 4. Go to http://localhost:3000
 
