@@ -69,8 +69,8 @@ mongo.updatedB = () => {
 }
 
 format_time = (dateTime) => {
-    const currentDate = moment(new Date()).format('YYYY-MM-DD')
-    const refDate = moment(dateTime).format('YYYY-MM-DD')
+    const currentDate = moment(new Date()).tz('America/Santiago').format('YYYY-MM-DD')
+    const refDate = moment(dateTime).tz('America/Santiago').format('YYYY-MM-DD')
     if (moment(currentDate).isSame(moment(refDate))) {
         return moment(dateTime).format('h:mm a')
     } else {
